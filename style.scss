@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+$LightCyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+$GrayishBlue: hsl(217, 19%, 38%);
+$DarkGrayishBlue: hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $DarkBlue;
+    font-family: "Manrope", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media (max-width: 375px) {
+        font-size: 55%;
+    }
+
+    @media (max-width: 1440px) {
+        font-size: 50%;
+    }
+}
+
+.card {
+    background-color: $DarkGrayishBlue;
+    padding: 3rem;
+    min-height: 20rem;
+    margin: 0 auto;
+    max-width: 40rem;
+    text-align: center;
+    border-radius: 1.3rem;
+    -webkit-border-radius: 1.3rem;
+    -moz-border-radius: 1.3rem;
+    -ms-border-radius: 1.3rem;
+    -o-border-radius: 1.3rem;
+    position: relative;
+
+    .title {
+        color: $NeonGreen;
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+        font-size: 1.4rem;
+        padding-bottom: 1.4rem;
+    }
+
+    .advice {
+        color: $LightCyan;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+
+        font: {
+            size: 1.8rem;
+        }
+
+        word-spacing: 0.5rem;
+    }
+
+    .divider {
+        max-width: 95%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+
+    }
+
+    .btn {
+        position: absolute;
+        bottom: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        background-color: $NeonGreen;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        padding: 1.5rem 1.7rem;
+        display: flex;
+        cursor: pointer;
+        img {
+            margin : 0 auto ;
+        }
+    }
+}
